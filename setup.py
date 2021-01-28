@@ -21,10 +21,8 @@ setup(
     author='TrueSonOfaGun',
     author_email='idonthaveone@fake.email',
     description='Used to grab pdf file from a domain',
-    python_version='>=3.0',
     long_description=long_description,
     url="https://github.com/truesonofagun/pdfCrab",
-    packages=['pdfCrab'],
     install_requires=requirements,
     scripts=['bin/pdfCrab']
 )
