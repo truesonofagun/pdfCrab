@@ -7,7 +7,7 @@ TO INSTALL:
     FULL INSTALL TO PATH: python3 setup.py install
     DEV INSTALL ADD SYM LINK: python3 setup.py develop
 """
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open("README.md", 'r') as f:
     long_description = f.read()
@@ -22,6 +22,7 @@ setup(
     author_email='idonthaveone@fake.email',
     description='Used to grab pdf file from a domain',
     long_description=long_description,
+    packages=find_packages(where='./pdfCrab'),
     url="https://github.com/truesonofagun/pdfCrab",
     install_requires=requirements,
     scripts=['bin/pdfCrab']
